@@ -2,15 +2,13 @@ package Inheritance;
 
 public class ChildClass extends SuperClass {
 	
-	String name = "child Name";
+	int a;
 	
 	public ChildClass(String name) {
 		super(name);
 	}
-	
+
 	public static void main(String[] args) {
-		ChildClass child = new ChildClass("super Name");
-		
-		System.out.println(child.name);
+		ChildClass child = (ChildClass) new SuperClass("dd");
 	}
 }
